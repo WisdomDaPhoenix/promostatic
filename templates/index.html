@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PROMOTION</title>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<style>
+    body {
+        position: relative;
+        margin: 0;
+        background: linear-gradient(rgb(255,0,0), rgba(250,0,0,0.4));
+        background-size: cover;
+
+    }
+
+    #offerbanner {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        height: 9rem;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255,255,0,0.2);
+        opacity: 0.3;
+    }
+    #offerbanner h3 {
+        font-family: 'Noto Sans Black';
+        font-size: 40px;
+        color: hsl(2.4,98.7%,3%);
+    }
+
+    #offerclock {
+        box-sizing: border-box;
+        width: 19rem;
+        height: 3.4rem;
+        background-color: red;
+        border: 2px solid white;
+        background-color: transparent;
+        border-radius: 5px;
+        margin-left: 1rem;
+        padding: 6px;
+        color: ghostwhite;
+        font-family: Roboto;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    #secOne {
+        position: relative;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        max-width: 100%;
+        height: 28rem;
+        margin: 30px 15px;
+        background-color: white;
+        box-shadow: 0 0 5px 4px rgba(0,0,0,0.2);
+        padding: 0.8rem;
+        border-radius: 10px;
+    }
+
+    #secTwo {
+        position: relative;
+        display: flex;
+        box-sizing: border-box;
+        max-width: 100%;
+        height: 26rem;
+        justify-content: space-around;
+        margin: 30px 15px;
+        background-color: rgba(20,25,25,0.2);
+        padding: 0.5rem;
+        border-radius: 10px;
+    }
+    #whysection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 6px;
+        width: 85%;
+        height: auto;
+    }
+    #whysection h2{
+        font-family: 'Nadir Regular';
+        font-weight: 500;
+        font-size: 25px;
+        text-align: justify;
+        margin: 8px;
+    }
+    #whysection .whytext {
+        font-family: 'Antonela Regular';
+        font-weight: 500;
+        font-size: 60px;
+        font-style: italic;
+        color: red;
+    }
+
+    #whysection .buy {
+        font-family: 'Nadir Regular';
+        font-weight: 500;
+        font-size: 25px;
+        text-align: center;
+        height: 3.2rem;
+        background-color: rgba(255,255,0,0.8);
+        padding: 0.6rem;
+        border: 1px dotted white;
+        border-radius: 15px;
+        color: red;
+    }
+
+    #whysection #floor {
+        display: inline-flex;
+        width: auto;
+        height: 6rem;
+    }
+
+    #whysection p {
+        color: rgba(255,255,0,0.8);
+        font-family: 'Noto Sans Light';
+        font-weight: 300;
+        font-size: 24px;
+    }
+
+
+    #whysection #amazon{
+        font-size: 40px;
+        margin-left: 18px;
+    }
+    #whysection #floor button {
+        cursor: pointer;
+        width: 8rem;
+        height: 3.5rem;
+        font-family: 'Noto Sans';
+        background-color: darkorange;
+        border-radius: 50px;
+        color: black;
+        border: none;
+        margin-left: 20px;
+    }
+    #bookBox {
+        display: block;
+        box-sizing: border-box;
+        width: 32rem;
+        height: 25rem;
+        background: transparent;
+/*        border: 1px solid black;*/
+        transform: rotate(-35deg);
+    }
+    #bookimg {
+        position: relative;
+        box-shadow: 0 0 3px 2px rgba(0,0,0,0.3);
+        bottom: 24px;
+        left: 25px;
+    }
+
+    #subscribe {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        height: auto;
+        row-gap: 8px;
+        padding: 1.5rem;
+    }
+
+    input[type='text'] {
+        width: 96.5%;
+        max-width: 100%;
+        height: 1.2rem;
+        padding: 7px;
+        color: red;
+        border: 2px solid red;
+        border-radius: 4px;
+    }
+
+    input::placeholder {
+        color: red;
+        font-family: 'Noto Sans Light';
+    }
+
+    #btnrow {
+        margin: 0;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 100%;
+        max-width: 100%;
+        height: 2.4rem;
+    }
+
+
+    input[type='submit'] {
+        cursor: pointer;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 10px;
+        font-family: Roboto;
+        font-size: 15px;
+        color: white;
+        background-color: red;
+        border: none;
+        border-radius: 5px;
+    }
+    label {
+        font-family: Antonio;
+        font-size: 22px;
+        font-weight: 200;
+        letter-spacing: 2px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: black;
+        width: 100%;
+        max-width: 100%;
+        height: 3rem;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 250;
+        text-align: center;
+        color: white;
+    }
+   ul {
+       display: flex;
+       flex-direction: column;
+/*       align-items: center;*/
+       box-sizing: border-box;
+       width: 100%;
+       max-width: 100%;
+       font-family: 'Noto Sans Light';
+       font-size: 14px;
+       list-style: none;
+       line-height: 24px;
+       color: whitesmoke;
+       text-align: left;
+       padding: 5px;
+       margin: 0;
+   }
+   #box {
+       width: 323px;
+       height: auto;
+       transform: scale(0.8);
+    }
+
+   .bxs-message-alt-check {
+       font-size: 16px;
+       color: red;
+       margin-right: 10px;
+   }
+
+    #secThree {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        max-width: 100%;
+        height: 26rem;
+        justify-content: space-around;
+        margin: 30px 15px;
+        background-color: rgba(20,25,25,0.2);
+        border-radius: 10px;
+    }
+
+    #left {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        box-sizing: border-box;
+        width: 50%;
+        max-width: 100%;
+        height: 100%;
+        background-color: red;
+        padding: 12px;
+        flex-shrink: 1;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        font-family: 'Noto Sans Light';
+        font-size: 14px;
+    }
+    #left fieldset {
+        border-radius: 14px;
+    }
+    #left legend {
+        color: white;
+        line-height: 20px;
+    }
+    #left .snippet {
+        font-size: 20px;
+        font-weight: bold;
+        display: inline-block;
+        background-color: black;
+        letter-spacing: 5px;
+        color: red;
+        padding: 7px;
+        border-radius: 8px;
+    }
+
+    #left .about {
+        font-size: 20px;
+        font-weight: bold;
+        display: inline-block;
+        background-color: black;
+        letter-spacing: 5px;
+        color: red;
+        padding: 7px;
+        border-radius: 8px;
+    }
+
+    #left p {
+        color: white;
+        line-height: 18px;
+    }
+    #right {
+        box-sizing: border-box;
+        width: 50%;
+        max-width: 100%;
+        height: auto;
+        background-color: white;
+        flex-shrink: 1;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    #right button {
+        font-family: 'Noto Sans';
+        font-weight: bold;
+    }
+
+</style>
+</head>
+<body>
+<div id="offerbanner">
+    <h3>OFFER AVAILABLE TILL: </h3>  <span id="offerclock"></span>
+</div>
+<section id="secOne">
+    <div id="bookBox"><img src="sme_book.jpg" width="320" height="480" id="bookimg"></div>
+    <form id="subscribe">
+        <label for="name">YOUR NAME</label> <input type="text" id="name" placeholder="Your name...">
+        <label for="email">YOUR EMAIL</label> <input type="text" id="email" placeholder="Your email...">
+        <label for="country">COUNTRY</label> <input type="text" id="country" placeholder="Your country...">
+        <span id="btnrow"><input type="submit" name="subscribe" value="SUBSCRIBE"></span>
+    </form>
+</section>
+<section id="secTwo">
+    <div id="whysection">
+        <h2><span class="whytext">WHY</span> YOU MUST <span class="buy"><strong>GET</strong></span> THIS BOOK </h2>
+        <ul>
+            <li><i class='bx bxs-message-alt-check'></i>Avoid Common Pitfalls: Learn about frequent mistakes SMEs make and how to steer clear of them, saving time and resources.</li>
+            <li><i class='bx bxs-message-alt-check'></i>Implement Best Practices: Discover proven strategies and practices that can lead to business growth and sustainability.</li>
+            <li><i class='bx bxs-message-alt-check'></i>Enhance Financial Management: Gain insights into effective budgeting, cash flow management, and financial planning tailored for SMEs.</li>
+            <li><i class='bx bxs-message-alt-check'></i>Improve Operational Efficiency: Understand how to streamline processes and optimize operations for better productivity.</li>
+            <li><i class='bx bxs-message-alt-check'></i>Navigate Regulatory Environments: Get guidance on complying with local laws and regulations, ensuring the business operates within legal frameworks.</li>
+            <li><i class='bx bxs-message-alt-check'></i>Develop Leadership Skills: Enhance personal leadership and management skills to better lead teams and make informed business decisions.</li>
+            <li><i class='bx bxs-message-alt-check'></i>Strengthen Marketing Efforts: Learn how to effectively promote products or services, reach target audiences, and build a strong brand presence.</li>
+        </ul>
+        <div id="floor"><p>Also available on: </p><i class='bx bxl-amazon' id="amazon"><br>amazon</i><button type="button">GET HERE<i class='bx bxs-right-arrow-circle'></i></button></div>
+
+    </div>
+
+    <span id="box">
+    <img src="success_final_pic.png" width="323" height="454">
+    </span>
+</section>
+<section id="secThree">
+    <div id="left">
+        <fieldset>
+            <legend><span class="snippet"> SNIPPET </span> <br> FROM THE BOOK</legend>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus
+                posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor.
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend style="text-align: center;" class="about">THE AUTHOR</legend>
+            <p>The founder of the Success Transformation Network (STN) and AcceleratedPlus,
+                focused on mentoring entrepreneurs and structuring businesses for
+                sustainable growth and expansion.Auditor, Business & Financial Analyst, Product Manager,
+                Digital Marketing Expert, Business Transformation.
+            </p>
+        </fieldset>
+    </div>
+    <div id="right">
+        <p>Pay with Paystack</p><br><br>
+        <button
+        onclick="window.location.href='https://paystack.com/pay/sme-dos-donts'"
+        style="width: 10rem; height: 60px; background-color: #08c175; color: white; border: none; border-radius: 10px; cursor: pointer;">
+        Pay Now </button>
+    </div>
+</section>
+<footer><p>&copy;Copyright. All rights reserved</p></footer>
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jul 1, 2025 15:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Output the result in an element with id="demo"
+      document.getElementById("offerclock").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+
+      // If the count down is over, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("offerclock").innerText = "EXPIRED";
+      }
+    }, 1000);
+</script>
+</body>
+
+</html>
