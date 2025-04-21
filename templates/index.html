@@ -131,15 +131,21 @@
         margin-left: 18px;
     }
     #whysection #floor button {
+        display: flex;
         cursor: pointer;
-        width: 8rem;
+        width: 12rem;
         height: 3.5rem;
-        font-family: 'Noto Sans';
+        font-family: 'Open Sans';
+        font-size: 16px;
         background-color: darkorange;
         border-radius: 50px;
         color: black;
         border: none;
-        margin-left: 20px;
+        padding: 12px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 25px;
+        box-shadow: 0 0 3px 2px rgba(0,0,0,0.4);
     }
     #bookBox {
         display: block;
@@ -255,6 +261,10 @@
        margin-right: 10px;
    }
 
+    #bx-arrow {
+        font-size: 18px;
+    }
+
     #secThree {
         position: relative;
         display: flex;
@@ -319,6 +329,10 @@
     }
     #right {
         box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 50%;
         max-width: 100%;
         height: auto;
@@ -359,7 +373,10 @@
             <li><i class='bx bxs-message-alt-check'></i>Develop Leadership Skills: Enhance personal leadership and management skills to better lead teams and make informed business decisions.</li>
             <li><i class='bx bxs-message-alt-check'></i>Strengthen Marketing Efforts: Learn how to effectively promote products or services, reach target audiences, and build a strong brand presence.</li>
         </ul>
-        <div id="floor"><p>Also available on: </p><i class='bx bxl-amazon' id="amazon"><br>amazon</i><button type="button" onclick="window.open('https://www.amazon.com.au/DONTs-SMEs-Basic-Guidelines-Scalability-ebook/dp/B0C733ZN9Y','_blank')">GET HERE<i class='bx bxs-right-arrow-circle'></i></button></div>
+        <div id="floor"><p>Also available on: </p><i class='bx bxl-amazon' id="amazon"><br>amazon</i>
+            <button type="button" onclick="window.open('https://www.amazon.com.au/DONTs-SMEs-Basic-Guidelines-Scalability-ebook/dp/B0C733ZN9Y','_blank')">GET IT HERE
+                <i class='bx bxs-right-arrow-circle' id="bx-arrow"></i>
+            </button></div>
 
     </div>
 
@@ -370,7 +387,7 @@
 <section id="secThree">
     <div id="left">
         <fieldset>
-            <legend><span class="snippet"> SNIPPET </span> <br> FROM THE BOOK</legend>
+            <legend><span class="snippet"> SNIPPET </span> <br>&nbsp; FROM THE BOOK</legend>
             <p>It is an open secret that over 80% of businesses started in today's world fail within the first 5 years and many of
             the reasons they fail will be mitigated if this book is read and applied by entrepreneurs. To maximize possibilities and stand out we must learn to consistently:<br>
             1. Identify things we need to stop doing, which become the DON'Ts to avoid.
@@ -390,7 +407,7 @@
         </fieldset>
     </div>
     <div id="right">
-        <p>Pay with Paystack</p><br><br>
+        <p style="font-family: 'Open Sans';">Pay with Paystack</p><br><br>
         <button
         onclick="window.open('https://paystack.com/pay/sme-dos-donts','_blank')"
         style="width: 10rem; height: 60px; background-color: #08c175; color: white; border: none; border-radius: 10px; cursor: pointer;">
