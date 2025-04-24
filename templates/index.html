@@ -24,13 +24,15 @@
         height: 9rem;
         justify-content: center;
         align-items: center;
-        background-color: rgb(255,255,0,0.2);
-        opacity: 0.3;
+        background-color: rgb(0,25,5);
+        opacity: 0.4;
     }
     #offerbanner h3 {
-        font-family: 'Noto Sans Black';
-        font-size: 40px;
-        color: hsl(2.4,98.7%,3%);
+        font-family: 'Open Sans';
+        font-size: 50px;
+        font-weight: 130;
+        letter-spacing: 5px;
+        color: white;
     }
 
     #offerclock {
@@ -150,6 +152,7 @@
     #bookBox {
         display: block;
         box-sizing: border-box;
+        flex-shrink: 1;
         width: 32rem;
         height: 25rem;
         background: transparent;
@@ -250,9 +253,13 @@
        margin: 0;
    }
    #box {
+       flex-shrink: 1;
        width: 323px;
        height: auto;
        transform: scale(0.8);
+       position: relative;
+       left: 35px;
+       top: 6px;
     }
 
    .bxs-message-alt-check {
@@ -281,7 +288,7 @@
     #left {
         display: flex;
         flex-direction: column;
-        row-gap: 16px;
+        row-gap: 8px;
         box-sizing: border-box;
         width: 50%;
         max-width: 100%;
@@ -379,7 +386,6 @@
             </button></div>
 
     </div>
-
     <span id="box">
     <img src="success_final_pic.png" width="323" height="454">
     </span>
@@ -388,26 +394,26 @@
     <div id="left">
         <fieldset>
             <legend><span class="snippet"> SNIPPET </span> <br>&nbsp; FROM THE BOOK</legend>
-            <p>It is an open secret that over 80% of businesses started in today's world fail within the first 5 years and many of
-            the reasons they fail will be mitigated if this book is read and applied by entrepreneurs. To maximize possibilities and stand out we must learn to consistently:<br>
-            1. Identify things we need to stop doing, which become the DON'Ts to avoid.
-            2. identify things we need to start doing, which become the DOs to adopt.
-            3. Identify things we need to keep doing.
+            <p>It is an open secret that over 80% of businesses started in today's world fail within the first 5 years
+            and this can be mitigated. For business to stand out they must:<br>
+            1. Identify things they need to stop doing, which become the DON'Ts to avoid.
+            2. identify things they need to start doing, which become the DOs to adopt.
+            3. Identify things they need to keep doing.
             These become habits that transform and make your business give long-standing impact in the market place.
-            This book will help make the above three possible. I believe a new breed of entrepreneurs must be empowered to emerge and change the game.
+                This book will help make the above three<strong>(3)</strong> possible.
             </p>
         </fieldset>
         <fieldset>
             <legend style="text-align: center;" class="about">THE AUTHOR</legend>
-            <p>The founder of the Success Transformation Network (STN) and AcceleratedPlus,
-                focused on mentoring entrepreneurs and structuring businesses for
-                sustainable growth and expansion.Auditor, Business & Financial Analyst, Product Manager,
-                Digital Marketing Expert, Business Transformation.
+            <p>The founder of the Success Transformation Network (STN) and AcceleratedPlus,<strong> Success Abasiama Ajilore </strong> is
+                a business and financial analyst, an Agile Professional. She has a Masters in Accounting, Audit, Leadership and Management, A Masters in Business Analysis, Strategic Systems Thinking.
+                An Author and E-commerce expert focused on mentoring entrepreneurs and structuring businesses for sustainable growth and expansion.
+                Other skills she's acquired include - Auditor, Business & Financial Analyst, Business Transformation Expert, Product Manager & Digital Marketing Expert.
             </p>
         </fieldset>
     </div>
     <div id="right">
-        <p style="font-family: 'Open Sans';">Pay with Paystack</p><br><br>
+        <p style="font-family: Roboto; font-weight: 450; letter-spacing: 4px; color: red;">Pay with<br> <img src="paystack-final.png" width="474" height="74"></p><br><br>
         <button
         onclick="window.open('https://paystack.com/pay/sme-dos-donts','_blank')"
         style="width: 10rem; height: 60px; background-color: #08c175; color: white; border: none; border-radius: 10px; cursor: pointer;">
