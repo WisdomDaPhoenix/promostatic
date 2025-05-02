@@ -55,6 +55,7 @@
         position: relative;
         box-sizing: border-box;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         align-items: flex-start;
         max-width: 100%;
@@ -72,7 +73,8 @@
         box-sizing: border-box;
         max-width: 100%;
         height: 26rem;
-        justify-content: space-around;
+        justify-content: space-between;
+/*        flex-wrap: wrap;*/
         margin: 30px 15px;
         background-color: rgba(20,25,25,0.2);
         padding: 0.5rem;
@@ -85,6 +87,7 @@
         row-gap: 6px;
         width: 85%;
         height: auto;
+        flex-shrink: 1;
     }
     #whysection h2{
         font-family: 'Nadir Regular';
@@ -174,6 +177,7 @@
         height: auto;
         row-gap: 8px;
         padding: 1.5rem;
+        flex-shrink: 1;
     }
 
     input[type='text'] {
@@ -366,10 +370,10 @@ s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); }
 </div>
 <section id="secOne">
     <div id="bookBox"><img src="{{ url_for('static',filename='images/sme_book.jpg') }}" width="320" height="480" id="bookimg"></div>
-    <form id="subscribe">
-        <label for="name">YOUR NAME</label> <input type="text" id="name" placeholder="Your name...">
-        <label for="email">YOUR EMAIL</label> <input type="text" id="email" placeholder="Your email...">
-        <label for="country">COUNTRY</label> <input type="text" id="country" placeholder="Your country...">
+    <form id="subscribe" method="post" action="/subscribe" enctype="multipart/form-data">
+        <label for="name">YOUR NAME</label> <input type="text" id="name" name="name" placeholder="Your name...">
+        <label for="email">YOUR EMAIL</label> <input type="text" id="email" name="email" placeholder="Your email...">
+        <label for="country">COUNTRY</label> <input type="text" id="country" name="country" placeholder="Your country...">
         <span id="btnrow"><input type="submit" name="subscribe" value="SUBSCRIBE"></span>
     </form>
 </section>
